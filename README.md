@@ -7,7 +7,7 @@
 
 <h3 align="center">
         <samp>&gt; こんにちは、
-                <b><a target="_blank" href="https://zariffs.studio/">ザリフです。</a></b>
+                <b><a target="_blank" href="https://msprojects.online/">ザリフです。</a></b>
         </samp>
 </h3>
 
@@ -16,7 +16,7 @@
     <br>
     「私は<b>オーストラリア</b>出身のRoblox開発者です。」
     <br>
-          https://zariffs.studio/
+          https://msprojects.online
     <br>
   </samp>
 </p>
