@@ -15,18 +15,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: generate contribution grid
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/activity.svg?color_snake=#ffffff&color_dots=#111111,#2e2e2e,#5e5e5e,#9e9e9e,#ffffff
-            dist/activity-light.svg?color_snake=#000000&color_dots=#f0f0f0,#c4c4c4,#8c8c8c,#4d4d4d,#000000
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: build heatmap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+          OUT_DIR: dist
+        run: python3 .github/scripts/activity.py
 
       - name: push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
+          keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
