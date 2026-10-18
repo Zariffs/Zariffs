@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="1200" height="90">
+  <style>
+    .mono { font-family: 'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Courier New', monospace; }
+    .sans { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    @keyframes draw { from { stroke-dashoffset: 900; } to { stroke-dashoffset: 0; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .rule { stroke-dasharray: 900; animation: draw 1.2s ease-out both; }
+    .txt { animation: fadeIn 0.8s ease-out both; }
+  </style>
+  <rect width="1200" height="90" rx="0" fill="#000"/>
+  <g class="txt">
+    <text class="mono" x="40" y="54" font-size="14" fill="#5c5c5c" letter-spacing="3">03</text>
+    <text class="sans" x="84" y="57" font-size="26" font-weight="700" fill="#ffffff" letter-spacing="8">STACK</text>
+    <text class="mono" x="1160" y="54" font-size="12" fill="#4a4a4a" letter-spacing="2" text-anchor="end">// tools of the trade</text>
+  </g>
+  <line class="rule" x1="244" y1="48" x2="930" y2="48" stroke="#2a2a2a" stroke-width="1"/>
+</svg>
