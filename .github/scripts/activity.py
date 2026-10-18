@@ -149,4 +149,9 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     for theme in THEMES:
         path = os.path.join(OUT_DIR, f"activity-{theme}.svg")
-        with open(path, "w", encoding="utf-8") as
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(render(weeks, total, theme))
+
+
+if __name__ == "__main__":
+    main()
