@@ -27,6 +27,8 @@
   </defs>
 
   <!-- base -->
+  <clipPath id="card"><rect width="1200" height="380" rx="16"/></clipPath>
+  <g clip-path="url(#card)">
   <rect width="1200" height="380" fill="#000"/>
   <rect width="1200" height="380" fill="url(#grid)"/>
   <rect width="760" height="380" fill="url(#fadeRight)"/>
@@ -55,10 +57,10 @@
   <line class="rule" x1="60" y1="232" x2="580" y2="232" stroke="#ffffff" stroke-width="2"/>
 
   <g class="sub mono" fill="#9a9a9a" font-size="15" letter-spacing="4">
-    <text x="60" y="266">DEVELOPER  /  REVERSE ENGINEER  /  XAUUSD TRADER</text>
+    <text x="60" y="266">ROBLOX DEVELOPER  /  XAUUSD TRADER</text>
   </g>
   <g class="sub mono" fill="#5c5c5c" font-size="13" letter-spacing="2">
-    <text x="60" y="294">roblox · lua · c · x86/x64 · mql5 · pine</text>
+    <text x="60" y="294">roblox studio · lua · luau · game systems</text>
   </g>
 
   <!-- chart panel -->
@@ -99,7 +101,8 @@
   <line class="chrome" x1="60" y1="322" x2="1140" y2="322" stroke="#1c1c1c"/>
   <g class="chrome mono" font-size="12" fill="#5c5c5c" letter-spacing="2">
     <text x="60" y="344">MSPROJECTS.ONLINE</text>
-    <text x="600" y="344" text-anchor="middle">HANDWRITTEN CODE · MINIMAL AI</text>
+    <text x="600" y="344" text-anchor="middle">HANDWRITTEN LUAU · MINIMAL AI</text>
     <text x="1140" y="344" text-anchor="end">STATUS: BUILDING</text>
+  </g>
   </g>
 </svg>

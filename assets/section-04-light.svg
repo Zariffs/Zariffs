@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="1200" height="80">
+  <style>
+    @keyframes draw { from { stroke-dashoffset: 900; } to { stroke-dashoffset: 0; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .rule { stroke-dasharray: 900; animation: draw 1.2s ease-out both; }
+    .txt { animation: fadeIn 0.8s ease-out both; }
+  </style>
+  <g class="txt">
+    <text x="40" y="48" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Courier New', monospace" font-size="14" fill="#8c959f" letter-spacing="3">04</text>
+    <text x="84" y="51" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#111111" letter-spacing="8">TRADING</text>
+    <text x="1160" y="48" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Courier New', monospace" font-size="12" fill="#8c959f" letter-spacing="2" text-anchor="end">// on the side</text>
+  </g>
+  <line class="rule" x1="335" y1="42" x2="1015" y2="42" stroke="#d0d7de" stroke-width="1"/>
+</svg>
